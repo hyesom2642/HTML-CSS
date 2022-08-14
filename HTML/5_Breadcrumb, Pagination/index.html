@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5_Breadcrumb &amp; Pagination</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- breadcrumb -->
+  <div class="breadcrumb">
+    <a href="https://github.com/hyesom2642" aria-label="Go to hyesom2642 profile page">hyesom2642</a>
+    <a href="https://github.com/hyesom2642/HTML-CSS" aria-label="Go to HTML-CSS page">HTML-CSS</a>
+  </div>
+
+  <!-- pagination -->
+  <!-- ol>li{$}*9 -->
+  <!-- WAI-ARIA 웹접근성을 높여주는 API -->
+  <div class="pagination">
+    <a href="#" aria-label="Go to Previous Page" class="disabled">
+      Previous
+    </a>
+    <ol>
+      <li class="current-page">
+        <a href="#" aria-label="Current page, Go to page 1">1</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Go to page 2">2</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Go to page 3">3</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Go to page 4">4</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Go to page 5">5</a>
+      </li>
+      <li>
+        <button type="button" disabled>
+          ...
+        </button>
+      </li>
+      <li>
+        <a href="#" aria-label="Go to page 6">6</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Go to page 7">7</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Go to page 8">8</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Go to page 9">9</a>
+      </li>
+    </ol>
+    <a href="#" aria-label="Go to Next Page">
+      Next
+    </a>
+  </div>
+</body>
+</html>
