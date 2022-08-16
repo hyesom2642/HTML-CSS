@@ -1,0 +1,89 @@
+/* ===== reset ===== */
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2d3d;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+}
+
+/* ===== subscription ===== */
+.subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 32px 56px;
+  text-align: center;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.subscription h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6666666;
+  color: #212529;
+  margin-bottom: 8px;
+}
+
+.subscription p {
+  color: #333e47;
+  margin-bottom: 20px;
+}
+
+.subscription .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscription .input-group input {
+  width: 240px;
+  height: 30px;
+  padding: 0 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f6f8fa;
+  color: #333e47;
+  margin-right: 10px;
+}
+.input-group input::placeholder {
+  color: #b6bec8;
+}
+.subscription .input-group button {
+  height: 30px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4438;
+  color: #fff;
+  cursor: pointer;
+}
+.subscription .input-group button:hover {
+  opacity: 0.7;
+}
+.subscription .input-group input:focus,
+.subscription .input-group button:focus {
+  box-shadow: none;
+  outline: none;
+}
