@@ -1,0 +1,99 @@
+/* ===== reset ===== */
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2d3d;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #1f2d3d;
+}
+
+.receipt-title {
+  color: #fff;
+  font-size: 25px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 30px 40px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  background-color: #fff;
+  background-image: url("./assets/logo-mcdonalds.png");
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: 91% 28px;
+}
+
+.receipt > span {
+  order: 1;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #80868e;
+}
+
+.receipt h2 {
+  order: 2;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #333e47;
+}
+
+.receipt .barcode {
+  order: 3;
+  width: 120px;
+  margin-bottom: 32px;
+}
+
+.receipt img {
+  width: 100%;
+  height: auto;
+}
+
+.receipt > div {
+  order: 4;
+}
+
+.receipt .receipt-menu {
+  width: 100%;
+}
+
+.receipt .receipt-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.receipt .receipt-menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
