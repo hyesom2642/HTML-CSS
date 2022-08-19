@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ===== banner ===== */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  background-color: #FFC82C;
+  padding: 20px 0;
+  text-align: center;
+}
+.banner-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.333333333333333;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+.banner-title a {
+  color: #1F2D3D;
+}
+
+/* ===== landing ===== */
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/cat-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  text-align: right;
+  margin-bottom: 24px;
+}
+/* .landing-title strong {
+  
+} */
+.landing a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 52px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.landing a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 1440px) {
+  /* ===== banner ===== */
+  .banner {
+    top: 0;
+    height: 80px;
+  }
+  /* ===== landing ===== */
+  .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .landing-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .landing a {
+    width: 180px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.333333333333333;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
