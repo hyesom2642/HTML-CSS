@@ -1,0 +1,117 @@
+/* ===== reset ===== */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E5E5E5;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== card ===== */
+.card-image {
+  position: relative;
+  width: 360px;
+  height: 265px;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3333333333;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.375776) 57.03%, #000 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-image:hover .card-title {
+  opacity: 1;
+}
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* ===== card-content ===== */
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-image a {
+  display: flex;
+}
+.user-image img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.card-stats {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.card-stats div {
+  display: flex;
+  align-items: center;
+  color: #9E9EA7;
+}
+.card-stats div:hover{
+  cursor: pointer;
+  color: #EA4C89;
+}
+.card-stats div:first-child {
+  margin-right: 12px;
+}
+
+.card-stats dt {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  text-indent: -99999999px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.stats-comments dt {
+  background-image: url("./assets/icon-comment-muted.svg");
+}
+.stats-comments:hover dt {
+  cursor: pointer;
+  background-image: url("./assets/icon-comment-active.svg");
+}
+.stats-likes dt {
+  background-image: url("./assets/icon-favorite-muted.svg");
+}
+.stats-likes:hover dt {
+  cursor: pointer;
+  background-image: url("./assets/icon-favorite-active.svg");
+}
