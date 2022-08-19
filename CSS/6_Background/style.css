@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E5E5E5;
+  font-family: "Poppins", sans-serif;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: -1;
+}
+
+/* ===== card ===== */
+.card {
+  display: flex;
+  width: 840px;
+  height: 248px;
+  background-color: #fff;
+  padding: 24px;
+}
+
+/* ===== card-image ===== */
+.card-image {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: #E5EAEF;
+  background-image: url('./assets/img-house.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 6px;
+  margin-right: 24px;
+}
+.card-image .like-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.card-image .like-button button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: inherit;
+  background-image: url('./assets/icon-favorite.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* ===== card-content ===== */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9px;
+}
+
+.card-content .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-content .card-header .property-type .plus-badge {
+  width: 48px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #92174D;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.428571428571429;
+  padding: 1px 8px;
+  margin-right: 8px;
+}
+.card-content .card-header .property-type span {
+  color: #7D858F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.card-content .card-header .property-rate {
+  position: relative;
+  width: 93px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card-content .card-header .property-rate strong::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  background-image: url('./assets/icon-star.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.card-content .card-header .property-rate strong {
+  color: #151B26;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-right: 1px;
+}
+.card-content .card-header .property-rate span {
+  color: #7D858F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* ===== card-title =====  */
+.card-content .card-title {
+  color: #151B26;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* ===== card-detail ==== */
+.card-detail .property-detail {
+  color: #7D858F;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.142857142857143;
+}
+
+.card-detail .property-detail div:first-child {
+  margin-bottom: 8px;
+}
+
+.card-detail .property-detail dd span::after {
+  content: '·';
+  margin: 0 4px 0 6px;
+}
+
+.card-detail .property-detail dd span:last-child::after {
+  content: '';
+}
