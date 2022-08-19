@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Muli", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E5E5;
+}
+
+/* ==== loading ===== */
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 250px;
+  background-color: #fff;
+}
+.loading-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  animation-name: moment;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: alternate;
+}
+
+.progress-bar {
+  position: relative;
+  width: 300px;
+  height: 12px;
+  border-radius: 100px;
+  background-color: #e5eaef;
+  overflow: hidden;
+}
+
+.progress-bar-gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 12px;
+  border-radius: 100px;
+  background-color: #13ce66;
+  animation-name: loading-bar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* ===== animation ===== */
+@keyframes moment {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+@keyframes loading-bar {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  80% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
