@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  background-color: #E5E5E5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* ===== message ===== */
+.message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 810px;
+  background-color: #fff;
+  padding: 8px 21px 8px 8px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.message:hover {
+  background-color: #F8F8F8;
+}
+
+/* ===== message-user ===== */
+.message-user {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  margin-right: 12px;
+  overflow: hidden;
+}
+.message-user a {
+  display: block;
+}
+.message-user img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== message-content ===== */
+.message-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.message-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.message-info .message-sender,
+.message-text {
+  color: #212021;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.message-info .message-sender {
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+.message-info .message-time {
+  position: relative;
+  color: #626162;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.428571428571429;
+}
+.message-info .message-time:hover .tooltip {
+  display: block;
+}
+.message-info .message-time .tooltip {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  transform: translateX(-50%);
+  width: 134px;
+  height: 32px;
+  padding: 4px 12px;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.714285714285714;
+  white-space: nowrap;
+}
+.message-info .message-time .tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 4px solid #000;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  transform: translateX(-50%);
+}
+
+.message-text {
+  word-wrap: break-word;
+}
