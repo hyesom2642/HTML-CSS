@@ -2,4 +2,4 @@
 
 ---
 
-![position](./assets/position3.png)
+![position-3](./assets/position3.png)
